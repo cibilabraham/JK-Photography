@@ -5,8 +5,8 @@ body {
 }
 
 .layout_padding {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .layout_padding2 {
@@ -23,11 +23,11 @@ body {
 }
 
 .layout_padding-top {
-  padding-top: 80px;
+  padding-top: 120px;
 }
 
 .layout_padding-bottom {
-  padding-bottom: 80px;
+  padding-bottom: 120px;
 }
 
 .heading_container {
@@ -1221,7 +1221,7 @@ a:focus {
 }
 
 .contact_section input.message-box {
-  height: 80px;
+  height: 120px;
   border-radius: 15px;
 }
 
