@@ -1,322 +1,2135 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-
-<!-- Mirrored from themewagon.github.io/ace/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Jan 2024 05:42:15 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <link rel="shortcut icon" href="img/black.png" type="image/x-icon">
 
-  <title>jk fotografia</title>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Contact | ODE Studios</title>
+
+    <meta
+        name="description"
+        content="Contact ODE Studios for model shoots, product photography, podcasts, interviews, maternity, newborn and baby photography."
+    >
+
+    <!-- Favicon / Shortcut Icon -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/png">
+    <link rel="icon" href="images/logo.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
 
 
+   <style>
+/* =====================================================
+   CONTACT PAGE
+===================================================== */
 
-  <!-- slider stylesheet -->
-  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
-  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
 
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+/* =====================================================
+   HIDE HEADER LOGO
+===================================================== */
 
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Dosis:500|Raleway:400,600,700&amp;display=swap" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
+.site-header .site-logo,
+.site-header .site-logo img {
+    display: none !important;
+}
+
+.site-header .header-inner,
+.site-header .nav-wrapper {
+    justify-content: flex-end;
+}
+
+.site-header .main-nav {
+    margin-left: auto;
+}
+
+
+/* =====================================================
+   CONTACT HERO
+===================================================== */
+
+.contact-hero {
+    min-height: 62vh;
+
+    position: relative;
+
+    display: flex;
+    align-items: flex-end;
+
+    overflow: hidden;
+
+    color: #fff;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, .10),
+            rgba(0, 0, 0, .82)
+        ),
+        url("images/hero.jpg")
+        center center / cover no-repeat;
+}
+
+.contact-hero::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, .48),
+            transparent 70%
+        );
+
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   CONTACT HERO CONTENT
+   Same container behavior as index.html
+===================================================== */
+
+.contact-hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: min(100% - 48px, var(--container));
+    margin: 0 auto;
+
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+.contact-hero .eyebrow {
+    color: rgba(255, 255, 255, .70);
+}
+
+.contact-hero h1 {
+    max-width: 900px;
+
+    margin: 18px 0 25px;
+
+    color: #fff;
+
+    font-family: var(--font-display);
+
+    font-size: clamp(55px, 8vw, 105px);
+    font-weight: 400;
+
+    line-height: .94;
+
+    letter-spacing: -3px;
+}
+
+.contact-hero h1 em {
+    font-style: italic;
+
+    color: rgba(255, 255, 255, .70);
+}
+
+.contact-hero p {
+    max-width: 610px;
+
+    margin: 0;
+
+    color: rgba(255, 255, 255, .75);
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   CONTACT SECTION
+===================================================== */
+
+.contact-section {
+    padding: 120px 0;
+
+    background: #fff;
+}
+
+.contact-grid {
+    display: grid;
+
+    grid-template-columns: .75fr 1.25fr;
+
+    gap: 100px;
+
+    align-items: start;
+}
+
+
+/* =====================================================
+   CONTACT DETAILS
+===================================================== */
+
+.contact-info {
+    position: sticky;
+
+    top: 130px;
+}
+
+.contact-info .eyebrow {
+    color: var(--gray);
+}
+
+.contact-info h2 {
+    margin: 18px 0 25px;
+
+    color: #111;
+
+    font-family: var(--font-display);
+
+    font-size: clamp(44px, 5vw, 78px);
+    font-weight: 400;
+
+    line-height: .98;
+
+    letter-spacing: -2px;
+}
+
+.contact-info h2 em {
+    font-style: italic;
+
+    color: var(--gray);
+}
+
+.contact-info > p {
+    max-width: 450px;
+
+    margin: 0 0 45px;
+
+    color: var(--gray);
+
+    font-size: 15px;
+    line-height: 1.85;
+}
+
+
+/* =====================================================
+   CONTACT DETAIL LIST
+===================================================== */
+
+.contact-detail-list {
+    border-top: 1px solid var(--border);
+}
+
+.contact-detail {
+    display: flex;
+
+    gap: 20px;
+
+    padding: 22px 0;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.contact-detail-icon {
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--border);
+
+    border-radius: 50%;
+
+    color: var(--black);
+
+    font-size: 14px;
+}
+
+.contact-detail-content {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    min-width: 0;
+}
+
+.contact-detail-label {
+    color: var(--gray);
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: .13em;
+
+    text-transform: uppercase;
+}
+
+.contact-detail-content a,
+.contact-detail-content span {
+    color: var(--black);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    overflow-wrap: anywhere;
+}
+
+.contact-detail-content a:hover {
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   SOCIAL
+===================================================== */
+
+.contact-social {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 35px;
+}
+
+.contact-social a {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--border);
+
+    border-radius: 50%;
+
+    color: var(--black);
+
+    transition:
+        background .3s ease,
+        color .3s ease,
+        transform .3s ease;
+}
+
+.contact-social a:hover {
+    background: var(--black);
+
+    color: #fff;
+
+    transform: translateY(-3px);
+}
+
+
+/* =====================================================
+   CONTACT FORM
+===================================================== */
+
+.contact-form-wrapper {
+    padding: 55px;
+
+    background: var(--light);
+}
+
+.contact-form-heading {
+    margin-bottom: 40px;
+}
+
+.contact-form-heading span {
+    color: var(--gray);
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: .13em;
+
+    text-transform: uppercase;
+}
+
+.contact-form-heading h2 {
+    margin: 12px 0 0;
+
+    color: #111;
+
+    font-family: var(--font-display);
+
+    font-size: clamp(36px, 4vw, 60px);
+    font-weight: 400;
+
+    line-height: 1;
+
+    letter-spacing: -1px;
+}
+
+
+/* =====================================================
+   FORM GRID
+===================================================== */
+
+.contact-form {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 24px;
+}
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+.form-group.full {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    color: #444;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: .08em;
+
+    text-transform: uppercase;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    border: 1px solid #d8d8d8;
+
+    background: #fff;
+
+    padding: 15px 16px;
+
+    border-radius: 0;
+
+    outline: none;
+
+    color: var(--black);
+
+    font-family: var(--font-body);
+
+    font-size: 14px;
+
+    transition:
+        border-color .25s ease,
+        box-shadow .25s ease;
+}
+
+.form-group input,
+.form-group select {
+    height: 52px;
+}
+
+.form-group textarea {
+    min-height: 155px;
+
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--black);
+
+    box-shadow:
+        0 0 0 3px
+        rgba(0, 0, 0, .05);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aaa;
+}
+
+
+/* =====================================================
+   FORM SUBMIT
+===================================================== */
+
+.form-submit {
+    grid-column: 1 / -1;
+
+    padding-top: 8px;
+}
+
+.form-submit .btn {
+    width: 100%;
+
+    justify-content: center;
+}
+
+.form-note {
+    margin-top: 18px;
+
+    color: #999;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   SUCCESS MESSAGE
+===================================================== */
+
+.form-success {
+    display: none;
+
+    padding: 15px 18px;
+
+    margin-bottom: 25px;
+
+    background: #eaf6ee;
+
+    border: 1px solid #cce8d5;
+
+    color: #27643a;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+.form-success.show {
+    display: block;
+}
+
+
+/* =====================================================
+   STUDIO LOCATION
+===================================================== */
+
+.location-section {
+    padding: 0 0 120px;
+
+    background: #fff;
+}
+
+.location-heading {
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    gap: 40px;
+
+    margin-bottom: 45px;
+}
+
+.location-heading h2 {
+    margin: 0;
+
+    color: #111;
+
+    font-family: var(--font-display);
+
+    font-size: clamp(44px, 5vw, 78px);
+    font-weight: 400;
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+}
+
+.location-heading h2 em {
+    font-style: italic;
+
+    color: var(--gray);
+}
+
+.location-heading p {
+    max-width: 390px;
+
+    margin: 0;
+
+    color: var(--gray);
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   MAP
+===================================================== */
+
+.map-wrapper {
+    width: 100%;
+
+    min-height: 430px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #e9e9e9;
+}
+
+.map-wrapper iframe {
+    width: 100%;
+    height: 430px;
+
+    display: block;
+
+    border: 0;
+
+    filter: grayscale(100%);
+}
+
+.map-address {
+    position: absolute;
+
+    left: 30px;
+    bottom: 30px;
+
+    max-width: 330px;
+
+    padding: 20px 22px;
+
+    background: rgba(255, 255, 255, .96);
+
+    box-shadow:
+        0 15px 45px
+        rgba(0, 0, 0, .12);
+}
+
+.map-address strong {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #111;
+
+    font-family: var(--font-display);
+
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.map-address span {
+    color: var(--gray);
+
+    font-size: 12px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   QUICK CONTACT CTA
+===================================================== */
+
+.contact-quick {
+    padding: 100px 0;
+
+    background: var(--black);
+
+    color: #fff;
+}
+
+.contact-quick-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 1px;
+
+    background: rgba(255, 255, 255, .15);
+}
+
+.quick-card {
+    padding: 55px 45px;
+
+    background: var(--black);
+
+    transition: background .3s ease;
+}
+
+.quick-card:hover {
+    background: #151515;
+}
+
+.quick-card-icon {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 45px;
+
+    border: 1px solid rgba(255, 255, 255, .2);
+
+    border-radius: 50%;
+
+    color: rgba(255, 255, 255, .8);
+}
+
+.quick-card small {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: rgba(255, 255, 255, .42);
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: .13em;
+
+    text-transform: uppercase;
+}
+
+.quick-card h3 {
+    margin: 0;
+
+    font-family: var(--font-display);
+
+    font-size: clamp(30px, 3vw, 48px);
+    font-weight: 400;
+
+    line-height: 1.1;
+}
+
+.quick-card h3 a {
+    color: #fff;
+}
+
+.quick-card p {
+    max-width: 430px;
+
+    margin: 15px 0 0;
+
+    color: rgba(255, 255, 255, .5);
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .contact-hero {
+        min-height: 65vh;
+    }
+
+    .contact-hero-content {
+        width: min(100% - 40px, var(--container));
+
+        padding-top: 110px;
+        padding-bottom: 70px;
+    }
+
+    .contact-hero h1 {
+        font-size: clamp(52px, 9vw, 82px);
+
+        letter-spacing: -2px;
+    }
+
+    .contact-section {
+        padding: 100px 0;
+    }
+
+    .contact-grid {
+        grid-template-columns: .8fr 1.2fr;
+
+        gap: 55px;
+    }
+
+    .contact-form-wrapper {
+        padding: 42px;
+    }
+
+    .location-section {
+        padding-bottom: 100px;
+    }
+
+    .contact-quick {
+        padding: 90px 0;
+    }
+
+    .quick-card {
+        padding: 45px 35px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 760px) {
+
+    /* -----------------------------------------------
+       Header
+    ----------------------------------------------- */
+
+    .site-header .site-logo,
+    .site-header .site-logo img {
+        display: none !important;
+    }
+
+    .site-header .header-inner,
+    .site-header .nav-wrapper {
+        justify-content: flex-end;
+    }
+
+    .site-header .main-nav {
+        margin-left: 0;
+    }
+
+
+    /* -----------------------------------------------
+       Hero
+    ----------------------------------------------- */
+
+    .contact-hero {
+        min-height: 650px;
+
+        background-position: 55% center;
+    }
+
+    .contact-hero-content {
+        width: calc(100% - 32px);
+
+        padding-top: 100px;
+        padding-bottom: 58px;
+    }
+
+    .contact-hero h1 {
+        max-width: 100%;
+
+        margin: 16px 0 22px;
+
+        font-size: clamp(48px, 14vw, 70px);
+
+        line-height: .94;
+
+        letter-spacing: -2px;
+    }
+
+    .contact-hero p {
+        max-width: 100%;
+
+        font-size: 14px;
+
+        line-height: 1.75;
+    }
+
+
+    /* -----------------------------------------------
+       Contact Section
+    ----------------------------------------------- */
+
+    .contact-section {
+        padding: 80px 0;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+    }
+
+    .contact-info {
+        position: static;
+    }
+
+    .contact-info h2 {
+        font-size: clamp(42px, 12vw, 58px);
+
+        letter-spacing: -1px;
+    }
+
+    .contact-info > p {
+        font-size: 14px;
+
+        line-height: 1.8;
+
+        margin-bottom: 35px;
+    }
+
+    .contact-detail {
+        gap: 14px;
+
+        padding: 18px 0;
+    }
+
+    .contact-detail-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contact-detail-content a,
+    .contact-detail-content span {
+        font-size: 13px;
+    }
+
+
+    /* -----------------------------------------------
+       Contact Form
+    ----------------------------------------------- */
+
+    .contact-form-wrapper {
+        padding: 35px 25px;
+    }
+
+    .contact-form-heading {
+        margin-bottom: 30px;
+    }
+
+    .contact-form-heading h2 {
+        font-size: clamp(34px, 9vw, 46px);
+    }
+
+    .contact-form {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .form-group.full,
+    .form-submit {
+        grid-column: auto;
+    }
+
+    .form-group input,
+    .form-group select {
+        height: 50px;
+    }
+
+    .form-group textarea {
+        min-height: 140px;
+    }
+
+
+    /* -----------------------------------------------
+       Location
+    ----------------------------------------------- */
+
+    .location-section {
+        padding-bottom: 80px;
+    }
+
+    .location-heading {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 18px;
+
+        margin-bottom: 30px;
+    }
+
+    .location-heading h2 {
+        font-size: clamp(42px, 12vw, 58px);
+
+        letter-spacing: -1px;
+    }
+
+    .location-heading p {
+        max-width: 100%;
+
+        font-size: 13px;
+    }
+
+    .map-wrapper {
+        min-height: 480px;
+    }
+
+    .map-wrapper iframe {
+        height: 480px;
+    }
+
+    .map-address {
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+
+        max-width: none;
+
+        padding: 18px 20px;
+    }
+
+
+    /* -----------------------------------------------
+       Quick Contact
+    ----------------------------------------------- */
+
+    .contact-quick {
+        padding: 75px 0;
+    }
+
+    .contact-quick-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quick-card {
+        padding: 40px 28px;
+    }
+
+    .quick-card-icon {
+        margin-bottom: 35px;
+    }
+
+    .quick-card h3 {
+        font-size: clamp(28px, 8vw, 40px);
+    }
+
+    .quick-card p {
+        font-size: 12px;
+    }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 420px) {
+
+    .contact-hero {
+        min-height: 610px;
+    }
+
+    .contact-hero-content {
+        width: calc(100% - 32px);
+
+        padding-top: 90px;
+        padding-bottom: 50px;
+    }
+
+    .contact-hero h1 {
+        font-size: 46px;
+
+        letter-spacing: -1.5px;
+    }
+
+    .contact-hero p {
+        font-size: 13px;
+    }
+
+    .contact-section {
+        padding: 70px 0;
+    }
+
+    .contact-grid {
+        gap: 45px;
+    }
+
+    .contact-info h2 {
+        font-size: 42px;
+    }
+
+    .contact-form-wrapper {
+        padding: 30px 20px;
+    }
+
+    .contact-form-heading h2 {
+        font-size: 34px;
+    }
+
+    .location-section {
+        padding-bottom: 70px;
+    }
+
+    .location-heading h2 {
+        font-size: 42px;
+    }
+
+    .map-wrapper,
+    .map-wrapper iframe {
+        min-height: 450px;
+        height: 450px;
+    }
+
+    .map-address {
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+    }
+
+    .contact-quick {
+        padding: 65px 0;
+    }
+
+    .quick-card {
+        padding: 35px 22px;
+    }
+
+    .quick-card h3 {
+        font-size: 30px;
+    }
+}
+
+
+/* =====================================================
+   VERY SMALL DEVICES
+===================================================== */
+
+@media (max-width: 360px) {
+
+    .contact-hero-content {
+        width: calc(100% - 28px);
+    }
+
+    .contact-hero h1 {
+        font-size: 41px;
+    }
+
+    .contact-info h2 {
+        font-size: 38px;
+    }
+
+    .contact-form-wrapper {
+        padding: 28px 18px;
+    }
+
+    .location-heading h2 {
+        font-size: 38px;
+    }
+
+    .quick-card h3 {
+        font-size: 27px;
+    }
+}
+
+
+/* =====================================================
+   TOUCH DEVICES
+===================================================== */
+
+@media (hover: none) {
+
+    .contact-social a:hover {
+        transform: none;
+
+        background: transparent;
+
+        color: var(--black);
+    }
+
+    .quick-card:hover {
+        background: var(--black);
+    }
+}
+</style>
+
 </head>
 
-<body class="sub_page">
-  <div class="hero_area">
 
-    <div class="main slick_main">
-    </div>
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a href="index.html" class="navbar-brand">
-            <img src="img/black.png" alt="">
-          </a>
-          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav  ">
-                <li class="nav-item ">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html"> About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="portfolio.html">Portfolio </a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="contact.html">Contact us</a>
-                </li>
-               
-              </ul>
-             
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <!-- end header section -->
-  </div>
+<body>
 
 
-  <!-- contact section -->
+<!-- =========================================================
+     HEADER
+========================================================= -->
 
-  <section class="contact_section layout_padding">
-    <div class="container ">
-      <div class="">
-        <h2 class="">
-          Get In Touch
-        </h2>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <form action="#">
-            <div>
-              <input type="text" placeholder="Name" />
-            </div>
-            <div>
-              <input type="email" placeholder="Email" />
-            </div>
-            <div>
-              <input type="text" placeholder="Phone Number" />
-            </div>
-            <div>
-              <input type="text" class="message-box" placeholder="Message" />
-            </div>
-            <div class="d-flex ">
-              <button>
-                SEND
-              </button>
-            </div>
-          </form>
-        </div>
-        <div class="col-md-6">
-          <div class="img-box">
-            <img src="img/contact-img.png" alt="">
-            <div class="img_overlay">
-              <h2>
-                Unsurpassed <br>
-                visual <br>
-                delight
-              </h2>
-              <a href="#">  
-                Contact Us
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<header
+    class="site-header"
+    id="siteHeader"
+>
 
-  <!-- end contact section -->
+    <div class="container header-inner">
 
-  <!-- info section -->
-  <section class="info_section layout_padding2">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="info-logo">
-            <a href="#">
-              <img class="info-a" src="img/info-logo.png" alt="">
+
+        <!--
+            Header logo intentionally hidden.
+            Footer logo remains visible.
+        -->
+
+        <a
+            href="index.html"
+            class="site-logo"
+            aria-label="ODE Studios Home"
+        >
+
+            <img
+                src="images/logo.png"
+                alt="ODE Studios"
+            >
+
+        </a>
+
+
+        <nav
+            class="main-nav"
+            id="mainNav"
+        >
+
+            <a href="index.html">
+                Home
             </a>
-         
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 offset-lg-1">
-          <div class="info-nav">
-            <h4>
-              Navigation
-            </h4>
-            <ul>
-              <li>
-                <a href="index.html">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="about.html">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="portfolio.html">
-                  Portfolio
-                </a>
-              </li>
-              <li class="active">
-                <a href="contact.html">
-                  Contact Us
-                </a>
-              </li>
-             
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="info-contact">
-            <h4>
-              Contact Info
-            </h4>
-            <div class="location">
-              <h6>
-                Mantain Office Address:
-              </h6>
-              <a href="#">
-                <img src="images/location.png" alt="">
-                <span>
-                  Loram ipusm New York, NY 36524
-                </span>
-              </a>
-            </div>
-            <div class="call">
-              <h6>
-                Customer Service:
-              </h6>
-              <a href="#">
-                <img src="images/call.png" alt="">
-                <span>
-                  ( +01 1234567890 )
-                </span>
-              </a>
-            </div>
-            <div class="call">
-              <a href="#">
-                <img src="images/mail.png" alt="">
-                <span>
-                  demo@gmail.com
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 offset-lg-1">
-          <div class="discover">
-            <h4>
-              Discover
-            </h4>
-            <ul>
-              <li>
-                <a href="#">
-                  Help
-                </a>
-              </li>
-             
-              <li>
-                <a href="contact.html">
-                  Contact Us
-                </a>
-              </li>
-            </ul>
-            <div class="social-box">
-              <a href="#">
-                <img src="images/fb.png" alt="">
-              </a>
-              <a href="#">
-                <img src="images/twitter.png" alt="">
-              </a>
-              <a href="#">
-                <img src="images/insta.png" alt="">
-              </a>
-              <a href="#">
-                <img src="images/linkedin.png" alt="">
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-     
+
+            <a href="services.html">
+                Services
+            </a>
+
+            <a href="gallery.html">
+                Gallery
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a
+                href="contact.html"
+                class="active"
+            >
+                Contact
+            </a>
+
+            <a
+                href="contact.html"
+                class="nav-cta"
+            >
+                Let's Talk
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </nav>
+
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open menu"
+            aria-expanded="false"
+        >
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
     </div>
-  </section>
+
+</header>
 
 
-
-  <!-- end info_section -->
-
-
-  <!-- footer section -->
-  <section class="container-fluid footer_section">
-    <p>
-      &copy; 2020 All Rights Reserved By
-      <a href="#">jk fotografia</a>
-    </p>
-  </section>
-  <!-- footer section -->
-
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script type="text/javascript" src="../../cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
-  <!-- end google map js -->
+<main>
 
 
-  <script>
-    $('.slider-for').slick({
-      autoplay: true,
-      autoplaySpeed: 3000,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      fade: true,
-      asNavFor: '.slider-nav'
-    });
-    $('.slider-nav').slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      asNavFor: '.slider-for',
-      dots: true,
-      centerMode: true,
-      focusOnSelect: true,
+<!-- =========================================================
+     HERO
+========================================================= -->
 
-    });
-  </script>
+<section class="contact-hero">
 
-  <script>
-    $('.slick-carousel').slick({
-      infinite: true,
-      slidesToShow: 3, // Shows a three slides at a time
-      slidesToScroll: 1, // When you click an arrow, it scrolls 1 slide at a time
-      responsive: [{
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
+    <div class="container contact-hero-content">
+
+
+        <span class="eyebrow">
+            CONTACT ODE STUDIOS
+        </span>
+
+
+        <h1>
+
+            Let's make
+
+            <em>something memorable.</em>
+
+        </h1>
+
+
+        <p>
+
+            Whether you have a fully formed idea or just a
+            starting point, tell us what you're imagining.
+            We'll take it from there.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CONTACT FORM + DETAILS
+========================================================= -->
+
+<section class="contact-section">
+
+    <div class="container">
+
+        <div class="contact-grid">
+
+
+            <!-- CONTACT DETAILS -->
+
+            <div class="contact-info">
+
+
+                <span class="eyebrow">
+                    GET IN TOUCH
+                </span>
+
+
+                <h2>
+
+                    We'd love to
+                    hear from <em>you.</em>
+
+                </h2>
+
+
+                <p>
+
+                    Planning a photoshoot, content day,
+                    podcast, interview or family session?
+                    Send us a few details and we'll get back
+                    to you as soon as possible.
+
+                </p>
+
+
+                <div class="contact-detail-list">
+
+
+                    <!-- PHONE -->
+
+                    <div class="contact-detail">
+
+                        <div class="contact-detail-icon">
+
+                            <i class="fa-solid fa-phone"></i>
+
+                        </div>
+
+
+                        <div class="contact-detail-content">
+
+                            <span class="contact-detail-label">
+                                Phone
+                            </span>
+
+                            <a href="tel:+918111837327">
+                                +91 81118 37327
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+
+                    <div class="contact-detail">
+
+                        <div class="contact-detail-icon">
+
+                            <i class="fa-regular fa-envelope"></i>
+
+                        </div>
+
+
+                        <div class="contact-detail-content">
+
+                            <span class="contact-detail-label">
+                                Email
+                            </span>
+
+                            <a href="mailto:optimuzzdig@gmail.com">
+                                optimuzzdig@gmail.com
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- LOCATION -->
+
+                    <div class="contact-detail">
+
+                        <div class="contact-detail-icon">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                        </div>
+
+
+                        <div class="contact-detail-content">
+
+                            <span class="contact-detail-label">
+                                Studio
+                            </span>
+
+                            <span>
+
+                                TC/32/2186 (2),
+                                Vazhayila Bridge,<br>
+
+                                Kavadithalakkal,
+                                Manikanteswaram PO,<br>
+
+                                Thiruvananthapuram -
+                                695013
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- SOCIAL -->
+
+                <div class="contact-social">
+
+                    <a
+                        href="https://www.instagram.com/_ode_studios/?hl=en"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Instagram"
+                    >
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+
+                    <a
+                        href="https://www.facebook.com/profile.php?id=61577753619101"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Facebook"
+                    >
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- FORM -->
+
+            <div class="contact-form-wrapper">
+
+
+                <div class="contact-form-heading">
+
+                    <span>
+                        START A PROJECT
+                    </span>
+
+                    <h2>
+                        Tell us about it.
+                    </h2>
+
+                </div>
+
+
+                <div
+                    class="form-success"
+                    id="formSuccess"
+                >
+
+                    Thank you! Your enquiry has been received.
+                    We'll get back to you shortly.
+
+                </div>
+
+
+                <form
+                    class="contact-form"
+                    id="contactForm"
+                >
+
+
+                    <!-- NAME -->
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Your Name *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- PHONE -->
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone *
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Your phone number"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="you@example.com"
+                        >
+
+                    </div>
+
+
+                    <!-- SERVICE -->
+
+                    <div class="form-group">
+
+                        <label for="service">
+                            Service *
+                        </label>
+
+                        <select
+                            id="service"
+                            name="service"
+                            required
+                        >
+
+                            <option
+                                value=""
+                                selected
+                                disabled
+                            >
+                                Select a service
+                            </option>
+
+                            <option value="model">
+                                Model Shoot
+                            </option>
+
+                            <option value="product">
+                                Product Shoot
+                            </option>
+
+                            <option value="podcast">
+                                Podcast Floor
+                            </option>
+
+                            <option value="interviews">
+                                Interviews
+                            </option>
+
+                            <option value="newborn">
+                                Newborn Baby Shoot
+                            </option>
+
+                            <option value="prebirthday">
+                                Pre-Birthday Shoot
+                            </option>
+
+                            <option value="maternity">
+                                Maternity Shoot
+                            </option>
+
+                            <option value="baby">
+                                Baby Shoot
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- DATE -->
+
+                    <div class="form-group">
+
+                        <label for="date">
+                            Preferred Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="date"
+                            name="date"
+                        >
+
+                    </div>
+
+
+                    <!-- PARTICIPANTS -->
+
+                    <div class="form-group">
+
+                        <label for="guests">
+                            People / Participants
+                        </label>
+
+                        <input
+                            type="number"
+                            id="guests"
+                            name="guests"
+                            min="1"
+                            placeholder="e.g. 2"
+                        >
+
+                    </div>
+
+
+                    <!-- MESSAGE -->
+
+                    <div class="form-group full">
+
+                        <label for="message">
+                            Tell us more *
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder="Tell us about your project, shoot, idea or occasion..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- SUBMIT -->
+
+                    <div class="form-submit">
+
+                        <button
+                            type="submit"
+                            class="btn btn-dark"
+                        >
+
+                            Send Enquiry
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+
+                        <p class="form-note">
+
+                            By submitting this form, you agree
+                            to be contacted by ODE Studios
+                            regarding your enquiry.
+
+                        </p>
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     LOCATION
+========================================================= -->
+
+<section class="location-section">
+
+    <div class="container">
+
+
+        <div class="location-heading">
+
+
+            <h2>
+
+                Come see
+                <em>the space.</em>
+
+            </h2>
+
+
+            <p>
+
+                Find ODE Studios in
+                Manikanteswaram, Thiruvananthapuram.
+                We'd be happy to welcome you into the studio.
+
+            </p>
+
+        </div>
+
+
+        <div class="map-wrapper">
+
+
+            <!-- GOOGLE MAP -->
+
+            <iframe
+                src="https://www.google.com/maps?q=Vazhayila%20Bridge%2C%20Manikanteswaram%2C%20Thiruvananthapuram%2C%20Kerala%20695013&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="ODE Studios location"
+            ></iframe>
+
+
+            <div class="map-address">
+
+                <strong>
+                    ODE Studios
+                </strong>
+
+                <span>
+
+                    TC/32/2186 (2), Vazhayila Bridge,
+                    Kavadithalakkal, Manikanteswaram PO,
+                    Thiruvananthapuram - 695013
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     QUICK CONTACT
+========================================================= -->
+
+<section class="contact-quick">
+
+    <div class="container">
+
+
+        <div class="contact-quick-grid">
+
+
+            <!-- PHONE -->
+
+            <div class="quick-card">
+
+                <div class="quick-card-icon">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                </div>
+
+
+                <small>
+                    Prefer to talk?
+                </small>
+
+
+                <h3>
+
+                    <a href="tel:+918111837327">
+                        +91 81118 37327
+                    </a>
+
+                </h3>
+
+
+                <p>
+
+                    Give us a call and let's discuss your
+                    shoot directly.
+
+                </p>
+
+            </div>
+
+
+            <!-- EMAIL -->
+
+            <div class="quick-card">
+
+                <div class="quick-card-icon">
+
+                    <i class="fa-regular fa-envelope"></i>
+
+                </div>
+
+
+                <small>
+                    Send an email
+                </small>
+
+
+                <h3>
+
+                    <a href="mailto:optimuzzdig@gmail.com">
+                        optimuzzdig@gmail.com
+                    </a>
+
+                </h3>
+
+
+                <p>
+
+                    Share your requirements, references or
+                    ideas with us by email.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+
+        <div class="footer-top">
+
+
+            <!-- FOOTER LOGO - REMAINS VISIBLE -->
+
+            <div class="footer-brand">
+
+                <a
+                    href="index.html"
+                    class="footer-logo"
+                >
+
+                    <img
+                        src="images/logo.png"
+                        alt="ODE Studios"
+                    >
+
+                </a>
+
+
+                <p>
+
+                    A creative photography studio for people,
+                    brands and stories that deserve to be seen.
+
+                </p>
+
+            </div>
+
+
+            <!-- EXPLORE -->
+
+            <div class="footer-column">
+
+                <span class="footer-title">
+                    Explore
+                </span>
+
+
+                <a href="index.html">
+                    Home
+                </a>
+
+
+                <a href="services.html">
+                    Services
+                </a>
+
+
+                <a href="gallery.html">
+                    Gallery
+                </a>
+
+
+                <a href="about.html">
+                    About
+                </a>
+
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="footer-column">
+
+                <span class="footer-title">
+                    Contact
+                </span>
+
+
+                <a href="tel:+918111837327">
+                    8111837327
+                </a>
+
+
+                <a href="mailto:optimuzzdig@gmail.com">
+                    optimuzzdig@gmail.com
+                </a>
+
+
+                <span>
+
+                    TC/32/2186 (2), Vazhayila Bridge,<br>
+                    Kavadithalakkal, Manikanteswaram PO,<br>
+                    Thiruvananthapuram - 695013
+
+                </span>
+
+            </div>
+
+
+            <!-- SOCIAL -->
+
+            <div class="footer-column">
+
+                <span class="footer-title">
+                    Follow
+                </span>
+
+
+                <div class="footer-social">
+
+                    <a
+                        href="https://www.instagram.com/_ode_studios/?hl=en"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Instagram"
+                    >
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+
+                    <a
+                        href="https://www.facebook.com/profile.php?id=61577753619101"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Facebook"
+                    >
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+
+                ©
+
+                <span class="current-year"></span>
+
+                ODE Studios.
+
+                All rights reserved.
+
+            </span>
+
+
+            <span>
+                Crafted with intention.
+            </span>
+
+        </div>
+
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     MAIN JS
+========================================================= -->
+
+<script src="js/script.js"></script>
+
+
+<!-- =========================================================
+     CONTACT FORM JS
+========================================================= -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const form =
+        document.getElementById("contactForm");
+
+    const success =
+        document.getElementById("formSuccess");
+
+
+    if (!form) {
+        return;
+    }
+
+
+    form.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+
+        const name =
+            document.getElementById("name").value.trim();
+
+        const phone =
+            document.getElementById("phone").value.trim();
+
+        const service =
+            document.getElementById("service").value;
+
+        const message =
+            document.getElementById("message").value.trim();
+
+
+        if (
+            !name ||
+            !phone ||
+            !service ||
+            !message
+        ) {
+
+            return;
+
         }
-      },
-      {
-        breakpoint: 420,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 3,
-        }
-      }
 
-      ]
+
+        /*
+        ---------------------------------------------------------
+        TEMPORARY FRONT-END SUBMISSION
+
+        This currently shows a success message.
+
+        For real enquiries, connect this form to:
+
+        - PHP
+        - Email API
+        - WhatsApp
+        - Database
+        ---------------------------------------------------------
+        */
+
+
+        success.classList.add("show");
+
+
+        form.reset();
+
+
+        success.scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+        });
+
     });
-  </script>
+
+});
+
+</script>
+
 
 </body>
 
-
-<!-- Mirrored from themewagon.github.io/ace/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Jan 2024 05:42:15 GMT -->
 </html>

@@ -1,336 +1,1861 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-
-<!-- Mirrored from themewagon.github.io/ace/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Jan 2024 05:42:15 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <link rel="shortcut icon" href="img/black.png" type="image/x-icon">
 
-  <title>jk fotografia</title>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>About | ODE Studios</title>
+
+    <meta
+        name="description"
+        content="Discover ODE Studios — a creative photography studio built around people, stories, brands and beautifully crafted visual experiences."
+    >
+
+    <!-- Favicon / Shortcut Icon -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/png">
+    <link rel="icon" href="images/logo.png" type="image/png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
 
 
+    <style>
+/* =====================================================
+   ABOUT PAGE
+===================================================== */
 
-  <!-- slider stylesheet -->
-  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
-  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
 
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+/* =====================================================
+   HIDE HEADER LOGO
+===================================================== */
 
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Dosis:500|Raleway:400,600,700&amp;display=swap" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
+.site-header .site-logo,
+.site-header .site-logo img {
+    display: none !important;
+}
+
+.site-header .header-inner,
+.site-header .nav-wrapper {
+    justify-content: flex-end;
+}
+
+.site-header .main-nav {
+    margin-left: auto;
+}
+
+
+/* =====================================================
+   ABOUT HERO
+===================================================== */
+
+.about-hero {
+    min-height: 72vh;
+
+    position: relative;
+
+    display: flex;
+    align-items: flex-end;
+
+    overflow: hidden;
+
+    color: #111;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, .05),
+            rgba(255, 255, 255, .90)
+        ),
+        url("images/studio.jpg")
+        center center / cover no-repeat;
+}
+
+.about-hero::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255, 255, 255, .78),
+            rgba(255, 255, 255, .15) 70%
+        );
+
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   ABOUT HERO CONTENT
+   Same container behavior as index.html hero
+===================================================== */
+
+.about-hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: min(100% - 48px, var(--container));
+    margin: 0 auto;
+
+    padding-top: 120px;
+    padding-bottom: 85px;
+}
+
+.about-hero .eyebrow {
+    color: rgba(0, 0, 0, .60);
+}
+
+.about-hero h1 {
+    max-width: 900px;
+
+    margin: 18px 0 25px;
+
+    color: #111;
+
+    font-family: var(--font-display);
+
+    font-size: clamp(55px, 8vw, 105px);
+    font-weight: 400;
+
+    line-height: .94;
+
+    letter-spacing: -3px;
+}
+
+.about-hero h1 em {
+    font-style: italic;
+    color: rgba(0, 0, 0, .55);
+}
+
+.about-hero p {
+    max-width: 600px;
+
+    margin: 0;
+
+    color: rgba(0, 0, 0, .65);
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   INTRO
+===================================================== */
+
+.about-intro {
+    padding: 125px 0;
+
+    background: #fff;
+}
+
+.about-intro-grid {
+    display: grid;
+
+    grid-template-columns: .8fr 1.2fr;
+
+    gap: 100px;
+
+    align-items: start;
+}
+
+.about-small-title {
+    display: block;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: .14em;
+
+    text-transform: uppercase;
+
+    color: var(--gray);
+}
+
+.about-intro h2 {
+    max-width: 850px;
+
+    margin: 0;
+
+    color: #111;
+
+    font-family: var(--font-display);
+
+    font-size: clamp(42px, 5vw, 85px);
+    font-weight: 400;
+
+    line-height: 1.02;
+
+    letter-spacing: -2px;
+}
+
+.about-intro h2 em {
+    font-style: italic;
+    color: var(--gray);
+}
+
+.about-intro-copy {
+    max-width: 620px;
+
+    margin-top: 45px;
+
+    color: #555;
+
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.about-intro-copy p {
+    margin: 0 0 22px;
+}
+
+.about-intro-copy p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =====================================================
+   IMAGE + STORY
+===================================================== */
+
+.about-story {
+    padding: 0 0 130px;
+
+    background: #fff;
+}
+
+.about-story-grid {
+    display: grid;
+
+    grid-template-columns: 1.15fr .85fr;
+
+    gap: 25px;
+
+    align-items: stretch;
+}
+
+.about-story-image {
+    position: relative;
+
+    min-height: 680px;
+
+    overflow: hidden;
+
+    background:
+        url("images/studio.jpg")
+        center center / cover no-repeat;
+}
+
+.about-story-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    min-height: 680px;
+
+    object-fit: cover;
+
+    transition:
+        transform .8s cubic-bezier(.2, .8, .2, 1);
+}
+
+.about-story-image:hover img {
+    transform: scale(1.04);
+}
+
+.about-story-content {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 70px 60px;
+
+    background: var(--light);
+}
+
+.about-story-content .eyebrow {
+    color: var(--gray);
+}
+
+.about-story-content h2 {
+    margin: 18px 0 25px;
+
+    color: #111;
+
+    font-family: var(--font-display);
+
+    font-size: clamp(40px, 4vw, 70px);
+    font-weight: 400;
+
+    line-height: 1;
+
+    letter-spacing: -1.5px;
+}
+
+.about-story-content h2 em {
+    font-style: italic;
+    color: var(--gray);
+}
+
+.about-story-content p {
+    margin: 0 0 18px;
+
+    color: #555;
+
+    font-size: 15px;
+    line-height: 1.85;
+}
+
+.about-story-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =====================================================
+   VALUES
+===================================================== */
+
+.about-values {
+    padding: 120px 0;
+
+    background: #f5f5f2;
+
+    color: #111;
+}
+
+.values-heading {
+    max-width: 700px;
+
+    margin-bottom: 70px;
+}
+
+.values-heading .eyebrow {
+    color: var(--gray);
+}
+
+.values-heading h2 {
+    margin: 18px 0 0;
+
+    color: #111;
+
+    font-family: var(--font-display);
+
+    font-size: clamp(48px, 5vw, 88px);
+    font-weight: 400;
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+}
+
+.values-heading h2 em {
+    font-style: italic;
+    color: var(--gray);
+}
+
+
+/* =====================================================
+   VALUE GRID
+===================================================== */
+
+.values-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1px;
+
+    background: var(--border);
+
+    border: 1px solid var(--border);
+}
+
+.value-card {
+    min-height: 310px;
+
+    padding: 45px 40px;
+
+    background: #fff;
+
+    transition:
+        background .35s ease,
+        transform .35s ease;
+}
+
+.value-card:hover {
+    background: #fafafa;
+
+    transform: translateY(-3px);
+}
+
+.value-number {
+    display: block;
+
+    margin-bottom: 55px;
+
+    color: #999;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: .12em;
+}
+
+.value-card h3 {
+    margin: 0 0 18px;
+
+    color: #111;
+
+    font-family: var(--font-display);
+
+    font-size: 30px;
+    font-weight: 400;
+
+    line-height: 1.15;
+}
+
+.value-card p {
+    max-width: 330px;
+
+    margin: 0;
+
+    color: #666;
+
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   SERVICES
+===================================================== */
+
+.about-services {
+    padding: 125px 0;
+
+    background: #fff;
+}
+
+.about-services-heading {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-end;
+
+    gap: 40px;
+
+    margin-bottom: 65px;
+}
+
+.about-services-heading h2 {
+    max-width: 700px;
+
+    margin: 0;
+
+    color: #111;
+
+    font-family: var(--font-display);
+
+    font-size: clamp(48px, 5vw, 80px);
+    font-weight: 400;
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+}
+
+.about-services-heading h2 em {
+    font-style: italic;
+    color: var(--gray);
+}
+
+.about-services-heading p {
+    max-width: 390px;
+
+    margin: 0;
+
+    color: var(--gray);
+
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   SERVICE LIST
+===================================================== */
+
+.service-list {
+    border-top: 1px solid var(--border);
+}
+
+.service-list-item {
+    display: grid;
+
+    grid-template-columns: 80px 1fr auto;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 28px 0;
+
+    border-bottom: 1px solid var(--border);
+
+    transition:
+        padding .35s ease,
+        background .35s ease;
+}
+
+.service-list-item:hover {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    background: #fafafa;
+}
+
+.service-list-number {
+    color: var(--gray);
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.service-list-item h3 {
+    margin: 0;
+
+    color: #111;
+
+    font-family: var(--font-display);
+
+    font-size: clamp(27px, 3vw, 45px);
+    font-weight: 400;
+
+    line-height: 1.1;
+}
+
+.service-list-item i {
+    color: var(--gray);
+
+    transition:
+        transform .3s ease,
+        color .3s ease;
+}
+
+.service-list-item:hover i {
+    transform: translateX(6px);
+
+    color: var(--accent);
+}
+
+
+/* =====================================================
+   CTA
+===================================================== */
+
+.about-cta {
+    padding: 125px 0;
+
+    background: #f3f3f0;
+
+    text-align: center;
+}
+
+.about-cta h2 {
+    max-width: 850px;
+
+    margin: 18px auto 25px;
+
+    color: #111;
+
+    font-family: var(--font-display);
+
+    font-size: clamp(48px, 6vw, 96px);
+    font-weight: 400;
+
+    line-height: .98;
+
+    letter-spacing: -2px;
+}
+
+.about-cta h2 em {
+    font-style: italic;
+    color: var(--gray);
+}
+
+.about-cta p {
+    max-width: 580px;
+
+    margin: 0 auto 35px;
+
+    color: var(--gray);
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   FOOTER LOGO
+===================================================== */
+
+.footer-logo {
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    display: block;
+
+    width: auto;
+    max-width: 150px;
+    height: auto;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .about-hero {
+        min-height: 68vh;
+    }
+
+    .about-hero-content {
+        width: min(100% - 40px, var(--container));
+
+        padding-top: 110px;
+        padding-bottom: 75px;
+    }
+
+    .about-hero h1 {
+        font-size: clamp(52px, 9vw, 82px);
+
+        letter-spacing: -2px;
+    }
+
+    .about-intro {
+        padding: 100px 0 80px;
+    }
+
+    .about-intro-grid {
+        grid-template-columns: .7fr 1.3fr;
+
+        gap: 55px;
+    }
+
+    .about-story-image,
+    .about-story-image img {
+        min-height: 580px;
+    }
+
+    .about-story-content {
+        padding: 55px 45px;
+    }
+
+    .about-values {
+        padding: 100px 0;
+    }
+
+    .value-card {
+        min-height: 290px;
+
+        padding: 38px 30px;
+    }
+
+    .about-services {
+        padding: 100px 0;
+    }
+
+    .about-services-heading {
+        gap: 30px;
+    }
+
+    .about-cta {
+        padding: 105px 0;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 760px) {
+
+    /* -----------------------------------------------
+       Header
+    ----------------------------------------------- */
+
+    .site-header .site-logo,
+    .site-header .site-logo img {
+        display: none !important;
+    }
+
+    .site-header .header-inner,
+    .site-header .nav-wrapper {
+        justify-content: flex-end;
+    }
+
+    .site-header .main-nav {
+        margin-left: 0;
+    }
+
+
+    /* -----------------------------------------------
+       Hero
+    ----------------------------------------------- */
+
+    .about-hero {
+        min-height: 680px;
+
+        background-position: 58% center;
+    }
+
+    .about-hero-content {
+        width: calc(100% - 32px);
+
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+
+    .about-hero h1 {
+        max-width: 100%;
+
+        margin: 16px 0 22px;
+
+        font-size: clamp(48px, 14vw, 70px);
+
+        line-height: .94;
+
+        letter-spacing: -2px;
+    }
+
+    .about-hero p {
+        max-width: 100%;
+
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+
+    /* -----------------------------------------------
+       Intro
+    ----------------------------------------------- */
+
+    .about-intro {
+        padding: 80px 0;
+    }
+
+    .about-intro-grid {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .about-intro h2 {
+        font-size: clamp(42px, 12vw, 58px);
+
+        letter-spacing: -1px;
+    }
+
+    .about-intro-copy {
+        margin-top: 30px;
+
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .about-intro-copy p {
+        margin-bottom: 18px;
+    }
+
+
+    /* -----------------------------------------------
+       Story
+    ----------------------------------------------- */
+
+    .about-story {
+        padding-bottom: 80px;
+    }
+
+    .about-story-grid {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+    .about-story-image,
+    .about-story-image img {
+        min-height: 450px;
+    }
+
+    .about-story-content {
+        padding: 50px 30px;
+    }
+
+    .about-story-content h2 {
+        font-size: clamp(40px, 11vw, 55px);
+
+        letter-spacing: -1px;
+    }
+
+    .about-story-content p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+
+    /* -----------------------------------------------
+       Values
+    ----------------------------------------------- */
+
+    .about-values {
+        padding: 80px 0;
+    }
+
+    .values-heading {
+        margin-bottom: 45px;
+    }
+
+    .values-heading h2 {
+        font-size: clamp(44px, 12vw, 58px);
+
+        letter-spacing: -1px;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .value-card {
+        min-height: 260px;
+
+        padding: 35px 28px;
+    }
+
+    .value-number {
+        margin-bottom: 35px;
+    }
+
+    .value-card h3 {
+        font-size: 28px;
+    }
+
+    .value-card p {
+        max-width: 100%;
+
+        font-size: 13px;
+    }
+
+
+    /* -----------------------------------------------
+       Services
+    ----------------------------------------------- */
+
+    .about-services {
+        padding: 80px 0;
+    }
+
+    .about-services-heading {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+
+        margin-bottom: 45px;
+    }
+
+    .about-services-heading h2 {
+        font-size: clamp(44px, 12vw, 60px);
+
+        letter-spacing: -1px;
+    }
+
+    .about-services-heading p {
+        max-width: 100%;
+
+        font-size: 13px;
+    }
+
+    .service-list-item {
+        grid-template-columns: 45px 1fr auto;
+
+        gap: 10px;
+
+        padding: 22px 0;
+    }
+
+    .service-list-item:hover {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .service-list-number {
+        font-size: 10px;
+    }
+
+    .service-list-item h3 {
+        font-size: clamp(22px, 6vw, 30px);
+    }
+
+
+    /* -----------------------------------------------
+       CTA
+    ----------------------------------------------- */
+
+    .about-cta {
+        padding: 85px 20px;
+    }
+
+    .about-cta h2 {
+        font-size: clamp(44px, 12vw, 60px);
+
+        letter-spacing: -1px;
+    }
+
+    .about-cta p {
+        font-size: 14px;
+    }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 420px) {
+
+    .about-hero {
+        min-height: 620px;
+    }
+
+    .about-hero-content {
+        width: calc(100% - 32px);
+
+        padding-top: 90px;
+        padding-bottom: 52px;
+    }
+
+    .about-hero h1 {
+        font-size: 46px;
+
+        letter-spacing: -1.5px;
+    }
+
+    .about-hero p {
+        font-size: 13px;
+    }
+
+    .about-intro {
+        padding: 70px 0;
+    }
+
+    .about-intro h2 {
+        font-size: 42px;
+    }
+
+    .about-story {
+        padding-bottom: 70px;
+    }
+
+    .about-story-image,
+    .about-story-image img {
+        min-height: 400px;
+    }
+
+    .about-story-content {
+        padding: 42px 25px;
+    }
+
+    .about-story-content h2 {
+        font-size: 40px;
+    }
+
+    .about-values {
+        padding: 70px 0;
+    }
+
+    .value-card {
+        min-height: 240px;
+
+        padding: 30px 24px;
+    }
+
+    .about-services {
+        padding: 70px 0;
+    }
+
+    .service-list-item {
+        grid-template-columns: 38px 1fr auto;
+
+        gap: 8px;
+
+        padding: 20px 0;
+    }
+
+    .service-list-item h3 {
+        font-size: 22px;
+    }
+
+    .about-cta {
+        padding: 70px 18px;
+    }
+
+    .about-cta h2 {
+        font-size: 42px;
+    }
+}
+
+
+/* =====================================================
+   VERY SMALL DEVICES
+===================================================== */
+
+@media (max-width: 360px) {
+
+    .about-hero-content {
+        width: calc(100% - 28px);
+    }
+
+    .about-hero h1 {
+        font-size: 41px;
+    }
+
+    .about-intro h2 {
+        font-size: 38px;
+    }
+
+    .about-story-image,
+    .about-story-image img {
+        min-height: 350px;
+    }
+
+    .about-story-content {
+        padding: 38px 22px;
+    }
+
+    .about-story-content h2 {
+        font-size: 36px;
+    }
+
+    .values-heading h2 {
+        font-size: 40px;
+    }
+
+    .about-services-heading h2 {
+        font-size: 40px;
+    }
+
+    .about-cta h2 {
+        font-size: 38px;
+    }
+}
+
+
+/* =====================================================
+   TOUCH DEVICES
+   Disable hover movement where there is no real hover
+===================================================== */
+
+@media (hover: none) {
+
+    .about-story-image:hover img {
+        transform: none;
+    }
+
+    .value-card:hover {
+        transform: none;
+        background: #fff;
+    }
+
+    .service-list-item:hover {
+        padding-left: 0;
+        padding-right: 0;
+        background: transparent;
+    }
+
+    .service-list-item:hover i {
+        transform: none;
+        color: var(--gray);
+    }
+}
+</style>
+
 </head>
 
-<body class="sub_page">
-  <div class="hero_area">
 
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a href="index.html" class="navbar-brand">
-            <img src="img/black.png" alt="">
-          </a>
-          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav  ">
-                <li class="nav-item ">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="about.html"> About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="portfolio.html">Portfolio </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact us</a>
-                </li>
-              
-              </ul>
-             
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <!-- end header section -->
-  </div>
-
-  <!-- about section -->
-
-  <section class="about_section layout_padding">
-    <div class="container-fluid">
-      <div class="box">
-        <div class="img_container">
-          <div class="img-box b1">
-            <img src="img/a-1.jpg" alt="">
-          </div>
-          <div class="img-box b2">
-            <img src="img/a-2.jpeg" alt="">
-          </div>
-        </div>
-        <div class="detail-box">
-          <h2>
-            About Our Studio
-          </h2>
-          <p>
-            jk fotografia is not just a studio; it's an artistic sanctuary where every click tells a unique story. With a passion for capturing moments that last a lifetime, we blend creativity and expertise to transform your memories into timeless works of art. Discover the magic behind every frame at jk fotografia – where your story becomes our masterpiece.
-          </p>
-
-          <p>
-            jk fotografia captures life's special moments with finesse, offering expertise in photography, shoots, advertisements, reels, and more. We transform ordinary moments into extraordinary memories, bringing your visions to life through the lens.
-          </p>
+<body>
 
 
-        </div>
+<!-- =========================================================
+     HEADER
+========================================================= -->
 
-      </div>
-      
-    </div>
-  </section>
+<header
+    class="site-header"
+    id="siteHeader"
+>
 
+    <div class="container header-inner">
 
-  <section class="about_section layout_padding2">
-    <div class="container-fluid">
-      
-      <div class="box">
-        <div class="detail-box">
-          
-          <h5>
-            Mantain Office Address:
-          </h5>
-          <label class="about_section-label">
-            Loram ipusm New York, NY 36524
-          </label>
+        <!-- Header logo intentionally hidden -->
 
-          <h5>
-            Contact
-          </h5>
-          <a href="#" class="about_section-btn-2">
-            <img src="images/call.png" alt="">
-            <span>
-              ( +01 1234567890 )
-            </span>
-          </a>
-          <a href="#" class="about_section-btn-2">
-            <img src="images/mail.png" alt="">
-            <span>
-              demo@gmail.com
-            </span>
-          </a>
-
-        </div>
+        <a
+            href="index.html"
+            class="site-logo"
+            aria-hidden="true"
+        >
+            <img
+                src="images/logo.png"
+                alt=""
+            >
+        </a>
 
 
-      </div>
-    </div>
-  </section>
-  <!-- end about section -->
+        <nav
+            class="main-nav"
+            id="mainNav"
+        >
 
-  <!-- info section -->
-  <section class="info_section layout_padding2">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="info-logo">
-            <a href="#">
-              <img class="info-a" src="img/info-logo.png" alt="">
+            <a href="index.html">
+                Home
             </a>
-           
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 offset-lg-1">
-          <div class="info-nav">
-            <h4>
-              Navigation
-            </h4>
-            <ul>
-              <li>
-                <a href="index.html">
-                  Home
-                </a>
-              </li>
-              <li class="active">
-                <a href="about.html">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="portfolio.html">
-                  Portfolio
-                </a>
-              </li>
-              <li>
-                <a href="contact.html">
-                  Contact Us
-                </a>
-              </li>
-             
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="info-contact">
-            <h4>
-              Contact Info
-            </h4>
-            <div class="location">
-              <h6>
-                Mantain Office Address:
-              </h6>
-              <a href="#">
-                <img src="images/location.png" alt="">
-                <span>
-                  Loram ipusm New York, NY 36524
-                </span>
-              </a>
-            </div>
-            <div class="call">
-              <h6>
-                Customer Service:
-              </h6>
-              <a href="#">
-                <img src="images/call.png" alt="">
-                <span>
-                  ( +01 1234567890 )
-                </span>
-              </a>
-            </div>
-            <div class="call">
-              <a href="#">
-                <img src="images/mail.png" alt="">
-                <span>
-                  demo@gmail.com
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 offset-lg-1">
-          <div class="discover">
-            <h4>
-              Discover
-            </h4>
-            <ul>
-              <li>
-                <a href="#">
-                  Help
-                </a>
-              </li>
-             
-              <li>
-                <a href="contact.html">
-                  Contact Us
-                </a>
-              </li>
-            </ul>
-            <div class="social-box">
-              <a href="#">
-                <img src="images/fb.png" alt="">
-              </a>
-              <a href="#">
-                <img src="images/twitter.png" alt="">
-              </a>
-              <a href="#">
-                <img src="images/insta.png" alt="">
-              </a>
-              <a href="#">
-                <img src="images/linkedin.png" alt="">
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-     
+
+            <a href="services.html">
+                Services
+            </a>
+
+            <a href="gallery.html">
+                Gallery
+            </a>
+
+            <a
+                href="about.html"
+                class="active"
+            >
+                About
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a
+                href="contact.html"
+                class="nav-cta"
+            >
+                Let's Talk
+
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </nav>
+
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open menu"
+            aria-expanded="false"
+        >
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
     </div>
-  </section>
+
+</header>
 
 
-
-  <!-- end info_section -->
-
-
-  <!-- footer section -->
-  <section class="container-fluid footer_section">
-    <p>
-      &copy; 2020 All Rights Reserved By
-      <a href="#">jk fotografia</a>
-    </p>
-  </section>
-  <!-- footer section -->
-
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script type="text/javascript" src="../../cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
-  <!-- end google map js -->
+<main>
 
 
-  <script>
-    $('.slider-for').slick({
-      autoplay: true,
-      autoplaySpeed: 3000,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      fade: true,
-      asNavFor: '.slider-nav'
-    });
-    $('.slider-nav').slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      asNavFor: '.slider-for',
-      dots: true,
-      centerMode: true,
-      focusOnSelect: true,
+<!-- =========================================================
+     HERO
+========================================================= -->
 
-    });
-  </script>
+<section class="about-hero">
 
-  <script>
-    $('.slick-carousel').slick({
-      infinite: true,
-      slidesToShow: 3, // Shows a three slides at a time
-      slidesToScroll: 1, // When you click an arrow, it scrolls 1 slide at a time
-      responsive: [{
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 420,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 3,
-        }
-      }
+    <div class="container about-hero-content">
 
-      ]
-    });
-  </script>
+        <span class="eyebrow">
+            ABOUT ODE STUDIOS
+        </span>
+
+
+        <h1>
+            We capture
+            <em>what matters.</em>
+        </h1>
+
+
+        <p>
+            ODE Studios is a creative photography space where
+            people, brands and stories come together to create
+            images that feel honest, intentional and timeless.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     INTRO
+========================================================= -->
+
+<section class="about-intro">
+
+    <div class="container">
+
+        <div class="about-intro-grid">
+
+            <div>
+
+                <span class="about-small-title">
+                    OUR APPROACH
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <h2>
+                    Photography isn't
+                    just about what you
+                    <em>see.</em>
+                </h2>
+
+
+                <div class="about-intro-copy">
+
+                    <p>
+                        It's about what you feel when you look
+                        back at it.
+                    </p>
+
+
+                    <p>
+                        At ODE Studios, we believe the best
+                        photographs don't need to shout. They
+                        simply need to feel right.
+                        Our studio is designed to give every
+                        project the space, light and attention it
+                        deserves — whether we're creating a
+                        campaign for a brand, documenting a
+                        growing family or producing content for
+                        your next conversation.
+                    </p>
+
+
+                    <p>
+                        From the first idea to the final frame,
+                        we focus on making the experience
+                        comfortable, creative and effortless.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     STORY / IMAGE
+========================================================= -->
+
+<section class="about-story">
+
+    <div class="container">
+
+        <div class="about-story-grid">
+
+
+            <div class="about-story-image">
+
+                <img
+                    src="images/studio.jpg"
+                    alt="ODE Studios creative photography space"
+                    loading="lazy"
+                >
+
+            </div>
+
+
+            <div class="about-story-content">
+
+                <span class="eyebrow">
+                    THE STUDIO
+                </span>
+
+
+                <h2>
+                    A space built
+                    for <em>ideas.</em>
+                </h2>
+
+
+                <p>
+                    ODE Studios is more than a place to take
+                    photographs.
+                </p>
+
+
+                <p>
+                    It is a flexible creative environment where
+                    portraits, products, podcasts, interviews
+                    and family stories can all have their own
+                    visual language.
+                </p>
+
+
+                <p>
+                    Clean backgrounds, controlled lighting,
+                    comfortable spaces and a thoughtful approach
+                    allow us to concentrate on the one thing that
+                    matters most — creating work you'll be proud
+                    to keep.
+                </p>
+
+
+                <a
+                    href="contact.html"
+                    class="btn btn-dark"
+                    style="margin-top:20px; width:max-content;"
+                >
+                    Visit The Studio
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     VALUES
+========================================================= -->
+
+<section class="about-values">
+
+    <div class="container">
+
+
+        <div class="values-heading">
+
+            <span class="eyebrow">
+                WHAT WE BELIEVE
+            </span>
+
+
+            <h2>
+                Simple ideas.
+                <em>Beautiful results.</em>
+            </h2>
+
+        </div>
+
+
+        <div class="values-grid">
+
+
+            <article class="value-card">
+
+                <span class="value-number">
+                    01 / EXPERIENCE
+                </span>
+
+
+                <h3>
+                    Make it comfortable.
+                </h3>
+
+
+                <p>
+                    Great photographs happen naturally when
+                    people feel comfortable in front of the
+                    camera. We create an environment where you
+                    can relax and be yourself.
+                </p>
+
+            </article>
+
+
+            <article class="value-card">
+
+                <span class="value-number">
+                    02 / CRAFT
+                </span>
+
+
+                <h3>
+                    Respect the details.
+                </h3>
+
+
+                <p>
+                    Light, composition, colour and expression
+                    all matter. We pay attention to the small
+                    things that make an image feel complete.
+                </p>
+
+            </article>
+
+
+            <article class="value-card">
+
+                <span class="value-number">
+                    03 / STORY
+                </span>
+
+
+                <h3>
+                    Keep it meaningful.
+                </h3>
+
+
+                <p>
+                    Trends come and go. A strong photograph
+                    should still mean something years from now.
+                    We create images with that in mind.
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SERVICES
+========================================================= -->
+
+<section class="about-services">
+
+    <div class="container">
+
+
+        <div class="about-services-heading">
+
+            <h2>
+                One studio.
+                <em>Many stories.</em>
+            </h2>
+
+
+            <p>
+                From personal milestones to professional
+                campaigns, our studio adapts to the story you
+                want to tell.
+            </p>
+
+        </div>
+
+
+        <div class="service-list">
+
+
+            <a
+                href="gallery.html?category=model"
+                class="service-list-item"
+            >
+
+                <span class="service-list-number">
+                    01
+                </span>
+
+                <h3>
+                    Model Shoot
+                </h3>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+            <a
+                href="gallery.html?category=product"
+                class="service-list-item"
+            >
+
+                <span class="service-list-number">
+                    02
+                </span>
+
+                <h3>
+                    Product Shoot
+                </h3>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+            <a
+                href="gallery.html?category=podcast"
+                class="service-list-item"
+            >
+
+                <span class="service-list-number">
+                    03
+                </span>
+
+                <h3>
+                    Podcast Floor
+                </h3>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+            <a
+                href="gallery.html?category=interviews"
+                class="service-list-item"
+            >
+
+                <span class="service-list-number">
+                    04
+                </span>
+
+                <h3>
+                    Interviews
+                </h3>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+            <a
+                href="gallery.html?category=newborn"
+                class="service-list-item"
+            >
+
+                <span class="service-list-number">
+                    05
+                </span>
+
+                <h3>
+                    Newborn Baby Shoot
+                </h3>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+            <a
+                href="gallery.html?category=prebirthday"
+                class="service-list-item"
+            >
+
+                <span class="service-list-number">
+                    06
+                </span>
+
+                <h3>
+                    Pre-Birthday Shoot
+                </h3>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+            <a
+                href="gallery.html?category=maternity"
+                class="service-list-item"
+            >
+
+                <span class="service-list-number">
+                    07
+                </span>
+
+                <h3>
+                    Maternity Shoot
+                </h3>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+            <a
+                href="gallery.html?category=baby"
+                class="service-list-item"
+            >
+
+                <span class="service-list-number">
+                    08
+                </span>
+
+                <h3>
+                    Baby Shoot
+                </h3>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CTA
+========================================================= -->
+
+<section class="about-cta">
+
+    <div class="container">
+
+        <span class="eyebrow">
+            LET'S CREATE
+        </span>
+
+
+        <h2>
+            Your story deserves
+            a <em>beautiful frame.</em>
+        </h2>
+
+
+        <p>
+            Have an idea, a campaign, a celebration or simply
+            a moment you'd like to remember?
+            We'd love to hear about it.
+        </p>
+
+
+        <a
+            href="contact.html"
+            class="btn btn-dark"
+        >
+            Start A Conversation
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+
+        <div class="footer-top">
+
+
+            <div class="footer-brand">
+
+                <a
+                    href="index.html"
+                    class="footer-logo"
+                >
+
+                    <img
+                        src="images/logo.png"
+                        alt="ODE Studios"
+                    >
+
+                </a>
+
+
+                <p>
+                    A creative photography studio for people,
+                    brands and stories that deserve to be seen.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <span class="footer-title">
+                    Explore
+                </span>
+
+
+                <a href="index.html">
+                    Home
+                </a>
+
+
+                <a href="services.html">
+                    Services
+                </a>
+
+
+                <a href="gallery.html">
+                    Gallery
+                </a>
+
+
+                <a href="about.html">
+                    About
+                </a>
+
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <span class="footer-title">
+                    Contact
+                </span>
+
+
+                <a href="tel:+918111837327">
+                    8111837327
+                </a>
+
+
+                <a href="mailto:optimuzzdig@gmail.com">
+                    optimuzzdig@gmail.com
+                </a>
+
+
+                <span>
+                    TC/32/2186 (2), Vazhayila Bridge,<br>
+                    Kavadithalakkal, Manikanteswaram PO,<br>
+                    Thiruvananthapuram - 695013
+                </span>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <span class="footer-title">
+                    Follow
+                </span>
+
+
+                <div class="footer-social">
+
+                    <a
+                        href="https://www.instagram.com/_ode_studios/?hl=en"
+                        target="_blank"
+                        aria-label="Instagram"
+                    >
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+
+                    <a
+                        href="https://www.facebook.com/profile.php?id=61577753619101"
+                        target="_blank"
+                        aria-label="Facebook"
+                    >
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+
+                ©
+
+                <span class="current-year"></span>
+
+                ODE Studios.
+
+                All rights reserved.
+
+            </span>
+
+
+            <span>
+                Crafted with intention.
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- Main JS -->
+<script src="js/script.js"></script>
+
 
 </body>
-
-
-<!-- Mirrored from themewagon.github.io/ace/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Jan 2024 05:42:15 GMT -->
 </html>

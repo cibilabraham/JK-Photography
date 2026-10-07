@@ -1,0 +1,101 @@
+[
+    {
+        "category": "general",
+        "categoryName": "ODE Studios",
+        "folder": "gallery",
+        "images": [
+            "gallery-01.jpg",
+            "gallery-02.jpg",
+            "gallery-03.jpg",
+            "gallery-04.jpg",
+            "gallery-05.jpg"
+        ]
+    },
+    {
+        "category": "model",
+        "categoryName": "Model Shoot",
+        "folder": "model-shoot",
+        "images": [
+            "model-01.jpg",
+            "model-02.jpg",
+            "model-03.jpg",
+            "model-04.jpg"
+        ]
+    },
+    {
+        "category": "product",
+        "categoryName": "Product Shoot",
+        "folder": "product-shoot",
+        "images": [
+            "product-01.jpg",
+            "product-02.jpg",
+            "product-03.jpg",
+            "product-04.jpg"
+        ]
+    },
+    {
+        "category": "podcast",
+        "categoryName": "Podcast Floor",
+        "folder": "podcast",
+        "images": [
+            "podcast-01.jpg"
+        ]
+    },
+    {
+        "category": "interviews",
+        "categoryName": "Interviews",
+        "folder": "interviews",
+        "images": [
+            "interview-01.jpg"
+        ]
+    },
+    {
+        "category": "newborn",
+        "categoryName": "Newborn",
+        "folder": "newborn",
+        "images": [
+            "newborn-01.jpg",
+            "newborn-02.jpg",
+            "newborn-03.jpg",
+            "newborn-04.jpg",
+            "newborn-05.jpg",
+            "newborn-06.jpg",
+            "newborn-07.jpg"
+        ]
+    },
+    {
+        "category": "prebirthday",
+        "categoryName": "Pre-Birthday",
+        "folder": "prebirthday",
+        "images": [
+            "prebirthday-01.jpg",
+            "prebirthday-02.jpg",
+            "prebirthday-03.jpg",
+            "prebirthday-04.jpg"
+        ]
+    },
+    {
+        "category": "maternity",
+        "categoryName": "Maternity",
+        "folder": "maternity",
+        "images": [
+            "maternity-01.jpg",
+            "maternity-02.jpg",
+            "maternity-03.jpg",
+            "maternity-04.jpg",
+            "maternity-05.jpg",
+            "maternity-06.jpg",
+            "maternity-07.jpg"
+        ]
+    },
+    {
+        "category": "baby",
+        "categoryName": "Baby Shoot",
+        "folder": "baby-shoot",
+        "images": [
+            "baby-01.jpg",
+            "baby-02.jpg",
+            "baby-03.jpg"
+        ]
+    }
+]
